@@ -1,12 +1,9 @@
 body {
-  background-color:#2d2d2d;
-  overflow: hidden;
-  /* font-family: 'Fjalla One', sans-serif; */
-  font-family: cursive;
-  /* display: flex; */
+  background-color: #2d2d2d;
+  overflow-x: hidden;
+  font-family: 'Passion One', sans-serif;
   align-items: center;
-  font-weight: bold;
-  justify-content: center;   
+  justify-content: center;
 }
 
 body,
@@ -15,56 +12,71 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: rgba(0,0,0,0); 
-  text-align:center
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: center
 }
 
-h2{
+h2 {
   font-size: 30px;
   color: #fff;
-  text-align: center; 
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: cursive;
 }
 
-svg{
-  width:80%;
-  height:80%;
-  visibility:hidden;
-  
-}
-.shine, .iconContainer{
-  pointer-events:none;
-}
-.dot{
-  cursor:pointer;
+svg {
+  width: 80%;
+  height: 80%;
+  visibility: hidden;
+  overflow: visible;
 }
 
-.shine circle{
-  stroke:#FFF;
+@media (max-width : 600px) {
+  svg{
+    width: 100%;
+    height: 80%;
+  }
 }
 
-.speechBubbleGroup text{
-  text-anchor:middle;
-  font-size:29px;
-  
+.shine,
+.iconContainer {
+  pointer-events: none;
 }
 
-line{
-  vector-effect:"non-scaling-stroke";
+.dot {
+  cursor: pointer;
 }
 
-.hitArea, .dragContainer{
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+.shine circle {
+  stroke: #FFF;
 }
 
-.btn{
+.speechBubbleGroup text {
+  text-anchor: middle;
+  font-size: 29px;
+
+}
+
+line {
+  vector-effect: "non-scaling-stroke";
+}
+
+.hitArea,
+.dragContainer {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.btn {
   margin: auto;
 }
-a{
+
+a {
   text-decoration: none;
 }
-.btn1,.btn2{
+
+.btn1,
+.btn2 {
   padding: 15px 20px;
   margin: 5px;
   border-radius: 15px;
@@ -73,16 +85,11 @@ a{
   color: #0B2F9F;
   font-size: 18px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-.speechBubbleFill{
-  justify-items: center;
-}
-
-.dotContainer{
-  justify-items: center;
-}
-
-.dot{
-  font-weight: bolder;
+g{
+  /* margin: auto; */
+  /* margin-right: 100px; */
+  background: #ff0;
 }
